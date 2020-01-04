@@ -3,6 +3,7 @@ import time
 start_time = time.time()
 characters = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
 
+#recursive function for finding passwords
 def generate(arr, i):
     if i == len(arr[0]):
         return arr
@@ -16,6 +17,8 @@ def generate(arr, i):
 
 count = 0
 max_length = 5
+
+#finds passwords of each length
 for length in range(1, max_length + 1):
     starting_pw = ["A" * length]
     for i in generate(starting_pw, 0):
