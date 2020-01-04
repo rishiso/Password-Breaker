@@ -18,7 +18,7 @@ def generate(arr, i):
 count = 0
 max_length = 5
 
-#finds passwords of each length
+#finds passwords of every length
 for length in range(1, max_length + 1):
     starting_pw = ["A" * length]
     for i in generate(starting_pw, 0):
