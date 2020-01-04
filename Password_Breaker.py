@@ -15,7 +15,8 @@ def generate(arr, i):
         return generate(res, i + 1)
 
 count = 0
-for length in range(1, 6):
+max_length = 5
+for length in range(1, max_length + 1):
     starting_pw = ["A" * length]
     for i in generate(starting_pw, 0):
         print(i)
