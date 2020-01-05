@@ -1,4 +1,4 @@
-# Password_Generator
+# Password Breaker
 * This program recursively generates all possible combinations of a password using the selected characters. 
 
 * You can modify the characters that are used in the passwords by changing the "characters" variable. 
